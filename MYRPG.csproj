@@ -244,6 +244,7 @@
     <Compile Include="Assets\applescript.cs" />
     <Compile Include="Assets\BrokenVector\LowPolySurvivalEssentials\Example\Scripts\AnimatedFire.cs" />
     <Compile Include="Assets\camfollew.cs" />
+    <Compile Include="Assets\enemyaction.cs" />
     <Compile Include="Assets\objattr.cs" />
     <Compile Include="Assets\PlayerPick.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
