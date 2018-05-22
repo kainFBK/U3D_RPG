@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerPick : MonoBehaviour {
 
+    GameObject playerObject;
+    
     //OnTriggerStay
     void OnTriggerStay(Collider PlayerPickCollider)
     {
@@ -14,14 +16,14 @@ public class PlayerPick : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 Debug.Log("F");
-                Destroy(PlayerPickCollider.gameObject);
+                playerObject.GetComponent<playerController>().addBagList(PlayerPickCollider.gameObject); 
             }
         }
     }
 
     // Use this for initialization
     void Start () {
-		
+        playerObject = GameObject.Find("MobileMaleFreeSimpleMovement1");
 	}
 	
 	// Update is called once per frame
